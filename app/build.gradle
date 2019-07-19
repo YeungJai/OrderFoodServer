@@ -45,8 +45,7 @@ dependencies {
     implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
     implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
     implementation 'com.google.firebase:firebase-storage:17.0.0'
-
-
+    implementation 'com.jaredrummler:material-spinner:1.1.0'
 
     // Facebook
     implementation 'com.facebook.android:facebook-android-sdk:[5,6)'

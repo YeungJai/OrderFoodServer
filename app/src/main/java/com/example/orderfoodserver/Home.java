@@ -9,6 +9,7 @@ import android.os.Bundle;
 import com.example.orderfoodserver.Common.Common;
 import com.example.orderfoodserver.Inteface.ItemClickListener;
 import com.example.orderfoodserver.Model.Category;
+import com.example.orderfoodserver.Model.Order;
 import com.example.orderfoodserver.ViewHolder.MenuViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.gms.tasks.OnCanceledListener;
@@ -331,13 +332,9 @@ public class Home extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_menu) {
-            // Handle the camera action
-        } else if (id == R.id.nav_cart) {
-
-        } else if (id == R.id.nav_order) {
-
-        } else if (id == R.id.nav_log_out) {
+        if (id == R.id.nav_order){
+            Intent orders = new Intent(Home.this, OrderStatus.class);
+            startActivity(orders);
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
